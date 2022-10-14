@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">   
+<title>Game</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+        background: -webkit-linear-gradient(to right, #434343, #000000);  
+background: linear-gradient(to right, #434343, #000000); 
+	text-align: center;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+    color: white;
+}
+
+#main-div-box{
+    margin-top: 50px;
+}
+
+#game-name{
+    font-size: 50px;
+    font-family: cursive;
+}
+
+#myBtn{
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#typeField {
+	border: black solid 2px;
+	background-color: white;
+	width: 40%;
+  min-height: 30px;
+	max-height: 40px;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+    border-radius: 20px;
+    color: black;
+}
+#scoreField, #words ,#timer{
+	padding: 25px;
+    font-size: 22px;
+}
+span {
+	color: red;
+	font-size: 2rem;
+	background-color: lightgray;
+	border: 1px gray solid;
+	border-radius: 15px;
+	text-align: center;
+}
+.fallowitem{
+    /* border: 2px solid red; */
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -145px;
+    width: 30px;
+    padding: 10px;
+}
+/* .fallowitem :hover{ */
+a :hover{
+    background-color: #979090;
+
+}
+  </style>
+</head>
+<body>
+    <a href="index.html">
+        <div id="home" class="fallowitem"><i class="fa fa-home" aria-hidden="true"></i></div>
+    </a>
+    <div id="main-div-box">
+        <h1 id="game-name">Type as many words as you can</h1>
+        <p>Click the Start button to start the game. Type the word that is shown above the pink field and finish with Enter. Below you can see how many words you typed.</p>
+        <p><button type="submit" id="myBtn" value="Start Game" onclick="startGame();">Start game</button></p>
+        <div id="words"></div>
+        <div id="typeField"></div>
+        <div id="timer"></div> 
+        <div id="scoreField"></div>
+    </div>
+
+</body>
+<script src="game.js"></script>
+</html>

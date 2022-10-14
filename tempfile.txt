@@ -1,0 +1,100 @@
+// console.log("Typing test page !");
+// const quoteApiUrl = "https://api.quotable.io/random?minLength=80&maxLength=100";
+// const quoteSection = document.getElementById('quote');
+// const userInput = document.getElementById('quote-input');
+
+// // console.log(quoteSection);
+// // console.log(userInput);
+
+// let quote = "";
+// let time = 60;
+// let timer = "";
+// let mistakes = 0;
+
+
+
+// // display randum Number 
+// const renderNewQuote = async () => {
+//     // fetch quote
+//     const response = await fetch(quoteApiUrl);
+
+//     // store 
+//     let data = await response.json();
+//     // console.log(data);
+
+//     quote = data.content;
+//     console.log(quote);
+
+//     let arr = quote.split("").map((value) => {
+//         return "<span class='quote-chars'>" + value + "</span>";
+//     });
+
+//     quoteSection.innerHTML += arr.join("");
+//     console.log(arr);
+// }
+
+
+
+
+// // logic for comparing
+// userInput.addEventListener("input", () => {
+//     let quoteChars = document.querySelectorAll(".quote-chars");
+
+//     //  create an array from recieved sapn tag
+//     quoteChars = Array.from(quoteChars);
+
+//     // array of user input character
+//     let userInputChars = userInput.value.split("");
+//     console.log(userInputChars);
+
+//     // loop through each charater
+//     quoteChars.forEach((char, index) => {
+//         if (char.innerText == userInputChars[index]) {
+//             char.classList.add("success");
+//         }
+//         else if (userInputChars[index] == null) {
+//             if (char.classList.contains("success")) {
+//                 char.classList.remove("success")
+//             }
+//             else {
+//                 char.classList.remove("fail");
+//             }
+//         }
+//         else {
+//             if (!char.classList.contains("fail")) {
+//                 mistakes = mistakes+1;
+//                 char.classList.add("fail")
+//             }
+//             document.getElementById("mistakes").innerText = mistakes;
+
+//         }
+
+
+//     });
+// });
+
+
+
+
+
+
+
+
+
+
+// // start test function
+// const startTest = () => {
+//     mistakes = 0;
+//     timer = "";
+//     userInput.disabled = false;
+//     document.getElementById('start-test').style.display = "none";
+//     document.getElementById('stop-test').style.display = "block";
+
+// }
+
+// window.onload = () => {
+//     userInput.disabled = true;
+//     document.getElementById('start-test').style.display = "block";
+//     document.getElementById('stop-test').style.display = "none";
+//     renderNewQuote()
+// }

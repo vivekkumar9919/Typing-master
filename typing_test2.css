@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5
+}
+
+#home {
+    padding-top: 20px;
+    height: 717px;
+    border: 0px solid red;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    /* margin-top: -32px; */
+}
+
+#nav-box {
+    border: 2px solid blue;
+    background-color: rgb(113, 113, 250);
+    width: 60rem;
+    display: grid;
+    margin-left: 18rem;
+    height: 4rem;
+    /* margin-top: 2rem; */
+    color: white;
+    border-radius: 12px;
+
+}
+
+#nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav-ul li a {
+
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+
+#nav-ul li {
+    list-style: none;
+
+}
+
+#nav-ul li :hover {
+    transition: all 1s ease;
+    color: white;
+    background-color: rgb(82, 82, 168);
+}
+
+#level1 {
+    height: 100px;
+    width: 400px;
+    /* border: 2px solid red; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 23%;
+    background-image: url('LEVEL2.gif');
+}
+
+
+/* container */
+.container {
+    width: 500px;
+    padding: 30px 30px;
+    border: 2px white red;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    background-color: white;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    -webkit-box-shadow: -12px 9px 17px -3px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -12px 9px 17px -3px rgba(255, 255, 255, 1);
+    box-shadow: -12px 9px 17px -3px rgba(255, 255, 255, 1);
+}
+
+#quote {
+    font-size: 18px;
+}
+
+.stats {
+    text-align: right;
+    font-size: 22px;
+    color: red;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+}
+
+textarea {
+    resize: none;
+    border: 2px solid black;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 8px 30px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    float: right;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.result {
+    /* margin-top: 67px;
+    text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    display: none;
+    width: 550px;
+    height: 300px;
+    padding: 30px 30px;
+    border: 2px white red;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    background-color: white;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    /* background-color: blueviolet; */
+     background-image: url('congBack.jpg');
+}
+
+#status{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+   
+}
+#textBelow{
+    font-size: 22px;
+    text-align: center;
+   
+}
+#gotolink{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: underline;
+    padding-right: 10px;
+}
+#gotolevel2{
+    display: none;
+}
+
+.wrapper {
+    font-size: 22px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.success {
+    color: green;
+
+}
+
+.fail {
+    color: red;
+    /* background-color: #000000; */
+}
